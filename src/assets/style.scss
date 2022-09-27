@@ -623,5 +623,137 @@ svg {
     }
 }
 
+footer {
+    padding: 80px 0 0 0;
+
+    &.footer-light {
+        background: #ffffff !important;
+        border-top: solid 1px #eeeeee;
+        color: #595d69;
+
+        a {
+            color: #595d69;
+            font-weight: 400;
+            text-decoration: none !important;
+        }
+
+        #form_subscribe {
+            input[type="text"] {
+                width: 80%;
+                float: left;
+                border-radius: 5px 0 0 5px;
+                background: rgba(255, 255, 255, .7);
+                border: solid 1px #333333;
+                border-right-color: rgb(51, 51, 51);
+                border-right-style: solid;
+                border-right-width: 1px;
+                border-right: none;
+                padding: 6px 12px;
+                box-shadow: 2px 2px 20px 0px rgba(20, 20, 20, 0.05);
+            }
+
+            #btn-subscribe i {
+                text-align: center;
+                font-size: 28px;
+                float: left;
+                width: 20%;
+                background: $text;
+                color: #ffffff;
+                display: table-cell;
+                padding: 5px 0 5px 0;
+                border-radius: 0 5px 5px 0;
+                -moz-border-radius: 0 5px 5px 0;
+                -webkit-border-radius: 0 5px 5px 0;
+            }
+        }
+
+        .subfooter {
+            margin-top: 40px;
+            padding: 20px 0 20px 0;
+            border-top: solid 1px #eeeeee;
+
+            .bottom-most {
+                display: flex;
+                justify-content: space-between;
+
+                .de-flex-col {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    img {
+                        max-width: 30px;
+                    }
+                    p{
+                        font-weight: 600;
+                        color: black;
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            span {
+                cursor: pointer;
+
+                img {
+                    margin-right: 30px;
+                }
+
+                &.copy {
+                    cursor: default;
+                    margin: 0;
+                }
+            }
+
+            .social-icons {
+                display: inline-block;
+
+                span {
+                    color: #595d69;
+
+                    i {
+                        text-shadow: none;
+                        color: white;
+                        background: #cb85ca;
+                        padding: 12px 10px 8px 10px;
+                        width: 34px;
+                        height: 34px;
+                        text-align: center;
+                        font-size: 16px;
+                        border-radius: 5px;
+                        margin: 0 5px 0 5px;
+                        transition: .3s;
+                    }
+
+                    &:hover i {
+                        color: black;
+                        background: white;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+
+    .widget {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 5px 0;
+            }
+        }
+
+        h5 {
+            margin-bottom: 20px;
+        }
+    }
+}
 
 @import './responsive.scss'

@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -735,6 +736,8 @@ function App() {
       <div className="bg-gradient">
         <div className="main"></div>
       </div>
+
+      <Footer />
     </div>
   );
 }
