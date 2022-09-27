@@ -731,6 +731,40 @@ function App() {
             </div>
           </div>
         </section>
+
+        <section className="team">
+          <div className="container">
+            <div className="row">
+              <h2>The MetaVersus Team</h2>
+              <h4>
+                We Have A Can-Do Attitude Backed Up By Many Years Of Experience
+                Delivering High-End Creative Solutions
+              </h4>
+            </div>
+            <div className="row team-card-row">
+              <div className="team-card">
+                <img src="/images/avax.png" alt="avax" />
+                <h3>Moray Hickes</h3>
+                <h5>Chief Excutive Officer And Co-Founder</h5>
+              </div>
+              <div className="team-card">
+                <img src="/images/btc.png" alt="avax" />
+                <h3>Moray Hickes</h3>
+                <h5>Chief Excutive Officer And Co-Founder</h5>
+              </div>
+              <div className="team-card">
+                <img src="/images/eth.png" alt="avax" />
+                <h3>Moray Hickes</h3>
+                <h5>Chief Excutive Officer And Co-Founder</h5>
+              </div>
+              <div className="team-card">
+                <img src="/images/sol.png" alt="avax" />
+                <h3>Moray Hickes</h3>
+                <h5>Chief Excutive Officer And Co-Founder</h5>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
 
       <div className="bg-gradient">
