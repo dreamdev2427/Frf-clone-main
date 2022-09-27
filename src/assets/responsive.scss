@@ -1,0 +1,78 @@
+@import './grid.scss';
+
+@media only screen and (max-width: 480px){
+   header{
+    padding: 20px 10px;
+        .primarybtn{
+            padding: 5px;
+            font-size: 13px !important;
+        }
+   }
+
+}
+
+@media only screen and (max-width: 576px){
+   .last-col{
+        .notification{
+            display: none;
+        }
+        .toggle-menu{
+            display: block;
+        }
+   }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+   
+}
+
+@media only screen and (max-width: 768px){
+    .banner{
+        .banner-botton{
+            .row{
+                gap: 40px;
+            }
+        }
+    }
+    .section-two{
+        padding-bottom: 0;
+    }
+    .section-three{
+        .right{
+            margin-top: 50px;
+            .col-sm-6{
+                justify-content: flex-start;
+            }
+        }
+       }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+   
+}
+
+@media only screen and (max-width: 1024px){
+    .header{
+        .row{
+            .main-menu, .col-sm-7{
+                display: none;
+
+            }
+            .col-sm-1, .col-sm-4{
+                width: 50% !important;
+            }
+            .notification{
+                margin-left: 10px !important;
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .toggle-menu{
+        display: none;
+    }
+}
+

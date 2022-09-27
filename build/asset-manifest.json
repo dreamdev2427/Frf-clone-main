@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.15e89209.css",
+    "main.js": "/static/js/main.fec20631.js",
+    "static/media/Euclid-Circular-Medium.ttf": "/static/media/Euclid-Circular-Medium.da9107f189000fddc6e7.ttf",
+    "static/media/Euclid-Circular-Regular.ttf": "/static/media/Euclid-Circular-Regular.4a3055af2b5d3eb95690.ttf",
+    "static/media/Euclid-Circular-SemiBold.ttf": "/static/media/Euclid-Circular-SemiBold.b55694b69b1287ed0f66.ttf",
+    "static/media/Euclid-Circular-Bold.ttf": "/static/media/Euclid-Circular-Bold.f9b0ae2872dea44f65c3.ttf",
+    "static/media/Euclid-Circular-Light.ttf": "/static/media/Euclid-Circular-Light.de6ac5224afb2bd0d0c2.ttf",
+    "static/media/Recoleta-Bold.ttf": "/static/media/Recoleta-Bold.1096ad6bcb7a02a3223f.ttf",
+    "static/media/Recoleta-Light.ttf": "/static/media/Recoleta-Light.76d0b952c24c10bce8c3.ttf",
+    "static/media/Recoleta-Regular.ttf": "/static/media/Recoleta-Regular.6be0678039437d0fa4bb.ttf",
+    "static/media/Recoleta-SemiBold.ttf": "/static/media/Recoleta-SemiBold.665ab2ee4586064b7158.ttf",
+    "static/media/Recoleta-Medium.ttf": "/static/media/Recoleta-Medium.6d37b766adc0de50ba64.ttf",
+    "index.html": "/index.html",
+    "main.15e89209.css.map": "/static/css/main.15e89209.css.map",
+    "main.fec20631.js.map": "/static/js/main.fec20631.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15e89209.css",
+    "static/js/main.fec20631.js"
+  ]
+}
