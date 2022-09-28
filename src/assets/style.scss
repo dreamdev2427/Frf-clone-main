@@ -661,6 +661,9 @@ svg {
                     height: 100%;
                     box-shadow: rgb(68 68 68 / 6%) 0px 4px 24px;
                     background: white; //linear-gradient(98.52deg, rgb(194, 179, 235) 16.01%, rgb(170, 183, 227) 84.96%), rgb(255, 255, 255);
+                    border-color: #12a7cb;
+                    border-width: 0.5px;
+                    border-style: outset;
 
                     .card-top {
                         padding: 10px 0;
@@ -694,60 +697,179 @@ svg {
                                 font-weight: 600;                            
                                 line-height: 1.1;
                                 color: #280d5f;
+                                text-align: right;
+                                margin-bottom: 3px;
                             }
                             .badges {
                                 display: flex;
                                 flex-direction: row;
+                                gap:2px;
 
-                                .core-badge {
+                                .badge-content {
+                                    -webkit-box-align: center;
+                                    align-items: center;
+                                    border-radius: 16px;
+                                    display: inline-flex;
+                                    font-weight: 400;
+                                    white-space: nowrap;
+                                    height: 28px;
+                                    padding: 0px 8px;
+                                    font-size: 14px;
+                                    background: white;
+                                    background: none;
 
-                                    .badge-content {
-                                        -webkit-box-align: center;
-                                        align-items: center;
-                                        border-radius: 16px;
-                                        display: inline-flex;
-                                        font-weight: 400;
-                                        white-space: nowrap;
-                                        height: 28px;
-                                        padding: 0px 8px;
-                                        font-size: 14px;
-                                        color: #7645d9;
-                                        background: white;
-                                        border: 2px solid #7645d9;
-                                        background: none;
-
-                                        .core-svg {
-                                            margin-right: 4px;
-                                            fill: #7645d9;
-                                            filter: none !important;
-                                        }
+                                    img {
+                                        margin-right: 4px;
+                                        width: 18px;
+                                        height: 18px;
                                     }
                                 }
+                                .core-badge .core-badge-content {
+                                        color: #7645d9;
+                                        border: 2px solid #7645d9;
+                                }
+                                .boosted-badge  .boosted-badge-content {
+                                        color: #31d0aa;
+                                        border: 2px solid #31d0aa;
+                                }
+                                .multiplex-badge .multiplex-badge-content {
+                                    color: white;
+                                    background-color: #7545d9;
+                                }
+                                .stable-badge .stable-badge-content {
+                                    color: #ed4b9e;
+                                    background: white;
+                                    border: 2px solid #ed4b9e;
+                                }
                             }
-                        }
-
-                        h5 {
-                            color: black;
-                            font-size: 17px;
                         }
                     }
 
                     .card-body {
                         margin-top: 20px;
 
-                        h3 {
-                            color: black;
-                            font-size: 30px;
-                            font-family: Recoleta-Bold;
-                            margin: 20px 0;
+                        .apr, .earn {
+                            display: flex;
+                            justify-content: space-between;
+                            margin: 8px 0;
                         }
 
-                        p {
-                            color: $text;
-                            margin: 0px 0px 32px;
-                            font-family: "Euclid-Circular-Regular";
+                        .apr-left, .earn-left {
+                            color: #280d5f;
+                            font-weight: 400;
+                            line-height: 1.5;
                             font-size: 16px;
-                            line-height: 24px;
+                        }
+
+                        .apr-right{
+                            color: #31d0aa;
+                            font-weight: 600;
+                            line-height: 1.5;
+                            margin-right: 4px;
+                            font-size: 16px;
+                        }
+                        .earn-right {
+                            color: #280d5f;
+                            font-weight: 600;
+                            line-height: 1.5;
+                            font-size: 16px;
+                        }
+                        .cake-earned{
+                            color: #7a6eaa;
+                            font-weight: 600;
+                            line-height: 1.5;
+                            text-transform: uppercase;
+                            font-size: 12px;
+                            margin: 5px 0;
+                        }
+                        .claim{
+                            margin: 10px 0;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            .claimable-amount {
+                                color: rgb(3, 201, 255);
+                                font-size: 22px;
+                                font-weight: 800;
+                                line-height: 1.1;
+                            }
+                            .zero {
+                                color: #bdc2c4;
+                            }
+
+                            .claim-btn {
+                                position: relative;
+                                -webkit-box-align: center;
+                                align-items: center;
+                                border: 0px;
+                                border-radius: 16px;
+                                box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+                                cursor: pointer;
+                                display: inline-flex;
+                                font-family: inherit;
+                                font-size: 16px;
+                                font-weight: 800;
+                                -webkit-box-pack: center;
+                                justify-content: center;
+                                letter-spacing: 0.03em;
+                                line-height: 1;
+                                opacity: 1;
+                                outline: 0px;
+                                transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+                                height: 48px;
+                                padding: 0px 24px;
+                                background-color: #1fc7d4;
+                                color:white;
+                                width: 40%;
+                                margin-top: 8px;
+                            }
+                            .disabled {
+                                background-color: #e9eaeb !important;
+                                border-color: #e9eaeb;
+                                box-shadow: none;
+                                color: #bdc2c4;
+                                cursor: not-allowed;
+                            }
+                        }
+                        .up-to-X {
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 1.1;
+                            color:#280d5f;
+                        }
+                        .textSubtle {
+                            color: #7a6eaa;
+                            font-weight: 400;
+                            line-height: 1.5;
+                            font-size: 12px;
+                        }
+                        .connect-btn {
+                            position: relative;
+                            -webkit-box-align: center;
+                            align-items: center;
+                            border: 0px;
+                            border-radius: 16px;
+                            box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+                            cursor: pointer;
+                            display: inline-flex;
+                            font-family: inherit;
+                            font-size: 16px;
+                            font-weight: 800;
+                            -webkit-box-pack: center;
+                            justify-content: center;
+                            letter-spacing: 0.03em;
+                            line-height: 1;
+                            opacity: 1;
+                            outline: 0px;
+                            transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+                            height: 48px;
+                            padding: 0px 24px;
+                            background-color: #1fc7d4;
+                            color: white;
+                            width: 100%;
+                            margin-top: 8px;
                         }
                     }
 
@@ -756,56 +878,28 @@ svg {
                         justify-content: space-between;
                         align-items: center;
                         margin: 35px 0;
+                        border-top: 2px solid #e7e3eb;
+                        overflow: hidden;
+                        width: 100%;
 
-                        .left {
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-
-                            h3 {
-                                display: inline;
-                                font-family: Recoleta-Bold;
-                                font-size: 35px;
-                                margin-right: 5px;
-                                color: $blue;
-                                line-height: 40px;
-                                letter-spacing: 0.00735em;
-                                text-align: right;
-                            }
-
-                            span {
-                                color: $text;
-                                font-weight: 600;
-                                font-size: 14px;
-                                line-height: 16px;
-                            }
-                        }
-
-                        .right {
-                            img {
-                                max-width: 35px;
-                                margin-right: -10px;
-                            }
-
-                            .bnb-svg {
-                                width: 35px;
-                                height: 35px;
-                            }
-                        }
                     }
 
                     .card-goto-explore {
                         margin-bottom: 30px;
+                        color: #1fc7e4;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        font-size: 16px;
+                        text-align: center;
 
-                        .explore {
-                            color: black;
-                            font-weight: 600;
+                        div {
+                            display: flex;
+                            justify-content: flex-start;
 
-                            &::after {
-                                content: '>';
-                                color: $blue;
-                                margin-left: 10px;
-                            }
+                        }
+                        .linquidity {
+                            justify-content: space-between;
+                            color:#280d5f;
                         }
                     }
                 }

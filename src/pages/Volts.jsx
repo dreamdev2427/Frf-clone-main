@@ -37,7 +37,7 @@ function Volts() {
                       <h2 className="card-title">CAKE-BNB</h2>
                       <div className="badges">
                         <div className="core-badge">
-                          <div className="badge-content">
+                          <div className="badge-content core-badge-content">
                             <img
                               src="/images/checkmark.svg"
                               className="core-svg"
@@ -46,244 +46,123 @@ function Volts() {
                             Core
                           </div>
                         </div>
-                        <div className="boosted-badge"></div>
-                        <div className="multiplex-badge"></div>
+                        <div className="boosted-badge">
+                          <div className="badge-content boosted-badge-content">
+                            <img
+                              src="/images/rocketmark.svg"
+                              className="core-svg"
+                              alt="core"
+                            ></img>
+                            Boosted
+                          </div>
+                        </div>
+                        <div className="multiplex-badge">
+                          <div className="badge-content multiplex-badge-content">
+                            40X
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="card-body">
-                    <h3>Generate Income</h3>
-                    <p>
-                      Automated call options selling strategy built to enhance
-                      returns on volatile assets with algorithmic strike and
-                      expiry.
-                    </p>
-                  </div>
-                  <div className="card-bottom">
-                    <div className="left">
-                      <h3>24</h3>
-                      <span>
-                        % <br />
-                        AVG APY
-                      </span>
+                    <div className="apr">
+                      <div className="apr-left">APR:</div>
+                      <div className="apr-right">98765423</div>
                     </div>
-                    <div className="right">
-                      <img src="/images/btc.png" alt="btc" />
-                      <img src="/images/sol.png" alt="sol" />
-                      <img src="/images/eth.png" alt="eth" />
-                      <img
-                        src="/images/bnb.svg"
-                        alt="bnb"
-                        className="bnb-svg"
-                      />
-                      <img src="/images/avax.png" alt="avax" />
+                    <div className="earn">
+                      <div className="earn-left">EARN:</div>
+                      <div className="earn-right">CAKE+Fees</div>
                     </div>
+                    <div className="cake-earned">CAKE EARNED</div>
+                    <div className="claim">
+                      <div className="claimable-amount zero">98765.43</div>
+                      <button className="claim-btn disabled">Harvest</button>
+                    </div>
+                    <div className="cake-earned">YIELD BOOSTER</div>
+                    <div className="up-to-X">Up to 2x</div>
+                    <div className="textSubtle">
+                      Connect wallet to activate yield booster
+                    </div>
+                    <div className="cake-earned">CAKE-BNB LP STAKED</div>
+                    <button className="connect-btn">Connect Wallet</button>
                   </div>
-                  <div className="card-goto-explore">
-                    <a href="/" className="explore">
-                      Explore Volt
-                    </a>
-                  </div>
+                  <div className="card-bottom"></div>
+                  <div className="card-goto-explore">Details</div>
                 </div>
               </div>
               <div className="col-sm-6 col-lg-4 column">
                 <div className="voltcard">
                   <div className="card-top">
-                    <h5 className="top-head">Volt 2</h5>
+                    <div className="top-letf">
+                      <img
+                        className="pair-icon-A"
+                        src="/images/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c.png"
+                        alt="iconA"
+                      />
+                      <img
+                        className="pair-icon-B"
+                        src="/images/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.png"
+                        alt="iconA"
+                      />
+                    </div>
+                    <div className="top-right">
+                      <h2 className="card-title">CAKE-BNB</h2>
+                      <div className="badges">
+                        <div className="stable-badge">
+                          <div className="badge-content stable-badge-content">
+                            Stable LP
+                          </div>
+                        </div>
+                        <div className="core-badge">
+                          <div className="badge-content core-badge-content">
+                            <img
+                              src="/images/checkmark.svg"
+                              className="core-svg"
+                              alt="core"
+                            ></img>
+                            Core
+                          </div>
+                        </div>
+                        <div className="multiplex-badge">
+                          <div className="badge-content multiplex-badge-content">
+                            40X
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div className="card-body">
-                    <h3>Generate Income</h3>
-                    <p>
-                      Automated call options selling strategy built to enhance
-                      returns on volatile assets with algorithmic strike and
-                      expiry.
-                    </p>
-                  </div>
-                  <div className="card-bottom">
-                    <div className="left">
-                      <h3>24</h3>
-                      <span>
-                        % <br />
-                        AVG APY
-                      </span>
+                    <div className="apr">
+                      <div className="apr-left">APR:</div>
+                      <div className="apr-right">98765423</div>
                     </div>
-                    <div className="right">
-                      <img src="/images/btc.png" alt="btc" />
-                      <img src="/images/sol.png" alt="sol" />
-                      <img src="/images/eth.png" alt="eth" />
-                      <img
-                        src="/images/bnb.svg"
-                        alt="bnb"
-                        className="bnb-svg"
-                      />
-                      <img src="/images/avax.png" alt="avax" />
+                    <div className="earn">
+                      <div className="earn-left">EARN:</div>
+                      <div className="earn-right">CAKE+Fees</div>
                     </div>
+                    <div className="cake-earned">CAKE EARNED</div>
+                    <div className="claim">
+                      <div className="claimable-amount">98765.43</div>
+                      <button className="claim-btn">Harvest</button>
+                    </div>
+                    <div className="cake-earned">YIELD BOOSTER</div>
+                    <div className="up-to-X">Up to 2x</div>
+                    <div className="textSubtle">
+                      Connect wallet to activate yield booster
+                    </div>
+                    <div className="cake-earned">CAKE-BNB LP STAKED</div>
+                    <button className="connect-btn">Connect Wallet</button>
                   </div>
+                  <div className="card-bottom"></div>
                   <div className="card-goto-explore">
-                    <a href="/" className="explore">
-                      Explore Volt
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-6 col-lg-4 column">
-                <div className="voltcard">
-                  <div className="card-top">
-                    <h5 className="top-head">Volt 3</h5>
-                  </div>
-                  <div className="card-body">
-                    <h3>Generate Income</h3>
-                    <p>
-                      Automated call options selling strategy built to enhance
-                      returns on volatile assets with algorithmic strike and
-                      expiry.
-                    </p>
-                  </div>
-                  <div className="card-bottom">
-                    <div className="left">
-                      <h3>24</h3>
-                      <span>
-                        % <br />
-                        AVG APY
-                      </span>
+                    Hide
+                    <div className="linquidity">
+                      <div>Total Linquidify:</div>
+                      <div>$282,660</div>
                     </div>
-                    <div className="right">
-                      <img src="/images/btc.png" alt="btc" />
-                      <img src="/images/sol.png" alt="sol" />
-                      <img src="/images/eth.png" alt="eth" />
-                      <img
-                        src="/images/bnb.svg"
-                        alt="bnb"
-                        className="bnb-svg"
-                      />
-                      <img src="/images/avax.png" alt="avax" />
-                    </div>
-                  </div>
-                  <div className="card-goto-explore">
-                    <a href="/" className="explore">
-                      Explore Volt
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-6 col-lg-4 column">
-                <div className="voltcard">
-                  <div className="card-top">
-                    <h5 className="top-head">Volt 4</h5>
-                  </div>
-                  <div className="card-body">
-                    <h3>Generate Income</h3>
-                    <p>
-                      Automated call options selling strategy built to enhance
-                      returns on volatile assets with algorithmic strike and
-                      expiry.
-                    </p>
-                  </div>
-                  <div className="card-bottom">
-                    <div className="left">
-                      <h3>24</h3>
-                      <span>
-                        % <br />
-                        AVG APY
-                      </span>
-                    </div>
-                    <div className="right">
-                      <img src="/images/btc.png" alt="btc" />
-                      <img src="/images/sol.png" alt="sol" />
-                      <img src="/images/eth.png" alt="eth" />
-                      <img
-                        src="/images/bnb.svg"
-                        alt="bnb"
-                        className="bnb-svg"
-                      />
-                      <img src="/images/avax.png" alt="avax" />
-                    </div>
-                  </div>
-                  <div className="card-goto-explore">
-                    <a href="/" className="explore">
-                      Explore Volt
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-6 col-lg-4 column">
-                <div className="voltcard">
-                  <div className="card-top">
-                    <h5 className="top-head">Volt 5</h5>
-                  </div>
-                  <div className="card-body">
-                    <h3>Generate Income</h3>
-                    <p>
-                      Automated call options selling strategy built to enhance
-                      returns on volatile assets with algorithmic strike and
-                      expiry.
-                    </p>
-                  </div>
-                  <div className="card-bottom">
-                    <div className="left">
-                      <h3>24</h3>
-                      <span>
-                        % <br />
-                        AVG APY
-                      </span>
-                    </div>
-                    <div className="right">
-                      <img src="/images/btc.png" alt="btc" />
-                      <img src="/images/sol.png" alt="sol" />
-                      <img src="/images/eth.png" alt="eth" />
-                      <img
-                        src="/images/bnb.svg"
-                        alt="bnb"
-                        className="bnb-svg"
-                      />
-                      <img src="/images/avax.png" alt="avax" />
-                    </div>
-                  </div>
-
-                  <div className="card-goto-explore">
-                    <a href="/" className="explore">
-                      Explore Volt
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-6 col-lg-4 column">
-                <div className="voltcard">
-                  <div className="card-top">
-                    <h5 className="top-head">Volt 6</h5>
-                  </div>
-                  <div className="card-body">
-                    <h3>Generate Income</h3>
-                    <p>
-                      Automated call options selling strategy built to enhance
-                      returns on volatile assets with algorithmic strike and
-                      expiry.
-                    </p>
-                  </div>
-                  <div className="card-bottom">
-                    <div className="left">
-                      <h3>24</h3>
-                      <span>
-                        % <br />
-                        AVG APY
-                      </span>
-                    </div>
-                    <div className="right">
-                      <img src="/images/btc.png" alt="btc" />
-                      <img src="/images/sol.png" alt="sol" />
-                      <img src="/images/eth.png" alt="eth" />
-                      <img
-                        src="/images/bnb.svg"
-                        alt="bnb"
-                        className="bnb-svg"
-                      />
-                      <img src="/images/avax.png" alt="avax" />
-                    </div>
-                  </div>
-                  <div className="card-goto-explore">
-                    <a href="/" className="explore">
-                      Explore Volt
-                    </a>
+                    <div>Get MONI-BNB</div>
+                    <div>View Contract</div>
+                    <div>See Pair Info</div>
                   </div>
                 </div>
               </div>
