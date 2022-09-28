@@ -623,6 +623,245 @@ svg {
     }
 }
 
+.volts-section {
+    backdrop-filter: blur(200px);
+    padding: 0 0 100px 0;
+
+    .container {
+        .row {
+            justify-content: center;
+
+            .col-sm-9 {
+                text-align: center;
+
+                h3 {
+                    color: $primary;
+                }
+
+                h2 {
+                    color: black;
+                    font-size: 36px;
+                    margin: 20px 0;
+                    font-family: Recoleta-Bold;
+                }
+            }
+        }
+
+        .second-row {
+            margin-top: 100px;
+
+            .col-sm-6 {
+                margin: 25px 0;
+
+                .voltcard {
+                    padding: 30px 30px 0 30px;
+                    border-radius: 12px;
+                    position: relative;
+                    cursor: pointer;
+                    height: 100%;
+                    box-shadow: rgb(68 68 68 / 6%) 0px 4px 24px;
+                    background: white; //linear-gradient(98.52deg, rgb(194, 179, 235) 16.01%, rgb(170, 183, 227) 84.96%), rgb(255, 255, 255);
+
+                    .card-top {
+                        padding: 10px 0;
+                        gap: 4px;
+                        display: flex;
+                        justify-content: space-between;
+                        -webkit-box-align: center;
+                        align-items: center;
+                        
+                        .top-letf {
+                            display: flex;
+
+                            .pair-icon-A {
+                                width: 30px;
+                                height: 30px;
+                                margin-right: -18px;
+                            }
+                            .pair-icon-B {
+                                width: 50px;
+                                height: 50px;
+                                margin-top: 10px;
+                            }
+                        }
+
+                        .top-right {
+                            display: flex;
+                            flex-direction: column;
+
+                            .card-title {
+                                font-size: 20px;
+                                font-weight: 600;                            
+                                line-height: 1.1;
+                                color: #280d5f;
+                            }
+                            .badges {
+                                display: flex;
+                                flex-direction: row;
+
+                                .core-badge {
+
+                                    .badge-content {
+                                        -webkit-box-align: center;
+                                        align-items: center;
+                                        border-radius: 16px;
+                                        display: inline-flex;
+                                        font-weight: 400;
+                                        white-space: nowrap;
+                                        height: 28px;
+                                        padding: 0px 8px;
+                                        font-size: 14px;
+                                        color: #7645d9;
+                                        background: white;
+                                        border: 2px solid #7645d9;
+                                        background: none;
+
+                                        .core-svg {
+                                            margin-right: 4px;
+                                            fill: #7645d9;
+                                            filter: none !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        h5 {
+                            color: black;
+                            font-size: 17px;
+                        }
+                    }
+
+                    .card-body {
+                        margin-top: 20px;
+
+                        h3 {
+                            color: black;
+                            font-size: 30px;
+                            font-family: Recoleta-Bold;
+                            margin: 20px 0;
+                        }
+
+                        p {
+                            color: $text;
+                            margin: 0px 0px 32px;
+                            font-family: "Euclid-Circular-Regular";
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+                    }
+
+                    .card-bottom {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 35px 0;
+
+                        .left {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            h3 {
+                                display: inline;
+                                font-family: Recoleta-Bold;
+                                font-size: 35px;
+                                margin-right: 5px;
+                                color: $blue;
+                                line-height: 40px;
+                                letter-spacing: 0.00735em;
+                                text-align: right;
+                            }
+
+                            span {
+                                color: $text;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 16px;
+                            }
+                        }
+
+                        .right {
+                            img {
+                                max-width: 35px;
+                                margin-right: -10px;
+                            }
+
+                            .bnb-svg {
+                                width: 35px;
+                                height: 35px;
+                            }
+                        }
+                    }
+
+                    .card-goto-explore {
+                        margin-bottom: 30px;
+
+                        .explore {
+                            color: black;
+                            font-weight: 600;
+
+                            &::after {
+                                content: '>';
+                                color: $blue;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .col-sm-6:nth-child(1) {
+                .card {
+                    &:hover {
+                        box-shadow: 0 4px 30px rgb(23, 201, 255);
+                    }
+                }
+            }
+
+            .col-sm-6:nth-child(2) {
+                .card {
+                    &:hover {
+                        box-shadow: 0 4px 30px rgb(93, 237, 57);
+                    }
+                }
+            }
+
+            .col-sm-6:nth-child(3) {
+                .card {
+                    &:hover {
+                        box-shadow: 0 4px 30px rgb(207, 230, 0);
+                    }
+                }
+            }
+
+            .col-sm-6:nth-child(4) {
+                .card {
+                    &:hover {
+                        box-shadow: 0 4px 30px rgb(166, 149, 252);
+                    }
+                }
+            }
+
+            .col-sm-6:nth-child(5) {
+                .card {
+                    &:hover {
+                        box-shadow: 0 4px 30px rgb(144, 92, 255);
+                    }
+                }
+            }
+
+            .col-sm-6:nth-child(6) {
+                .card {
+                    &:hover {
+                        box-shadow: 0 4px 30px rgb(255, 161, 143);
+                    }
+                }
+            }
+        }
+    }
+}
+
 footer {
     padding: 80px 0 0 0;
 
