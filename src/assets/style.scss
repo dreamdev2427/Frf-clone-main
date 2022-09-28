@@ -904,9 +904,11 @@ svg {
                         div {
                             display: flex;
                             justify-content: flex-start;
+                            align-items: center;
 
                             img {
-                                fill:#12a7cb
+                                width: 18px;
+                                height: 18px;
                             }
                         }
                         .linquidity {
