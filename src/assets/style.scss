@@ -877,7 +877,7 @@ svg {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        margin: 35px 0;
+                        margin: 30px 0;
                         border-top: 2px solid #e7e3eb;
                         overflow: hidden;
                         width: 100%;
@@ -885,16 +885,26 @@ svg {
                     }
 
                     .card-goto-explore-nochildren {
-                        margin-bottom: 30px;
+                        margin-bottom: 20px;
                         color: #1fc7e4;
                         font-weight: 600;
                         line-height: 1.5;
                         font-size: 16px;
                         text-align: center;
+                        
+                        .caption {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
                     }
 
                     .card-goto-explore {
-                        margin-bottom: 30px;
+                        margin-bottom: 20px;
                         color: #1fc7e4;
                         font-weight: 600;
                         line-height: 1.5;
@@ -915,6 +925,16 @@ svg {
                             justify-content: space-between;
                             color:#280d5f;
                         }
+                        .caption {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img{
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+
                     }
                 }
             }
