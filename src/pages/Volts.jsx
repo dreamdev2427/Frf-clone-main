@@ -19,7 +19,7 @@ function Volts() {
             </div>
             <div className="row second-row">
               <div className="col-sm-6 col-lg-4 column">
-                <div className="voltcard">
+                <div className="voltcard" id="volt1">
                   <div className="card-top">
                     <div className="top-letf">
                       <img
@@ -34,7 +34,7 @@ function Volts() {
                       />
                     </div>
                     <div className="top-right">
-                      <h2 className="card-title">CAKE-BNB</h2>
+                      <h2 className="card-title">CAKE-BNB1</h2>
                       <div className="badges">
                         <div className="core-badge">
                           <div className="badge-content core-badge-content">
@@ -96,7 +96,7 @@ function Volts() {
                 </div>
               </div>
               <div className="col-sm-6 col-lg-4 column">
-                <div className="voltcard">
+                <div className="voltcard" id="volt2">
                   <div className="card-top">
                     <div className="top-letf">
                       <img
@@ -111,7 +111,7 @@ function Volts() {
                       />
                     </div>
                     <div className="top-right">
-                      <h2 className="card-title">CAKE-BNB</h2>
+                      <h2 className="card-title">CAKE-BNB2</h2>
                       <div className="badges">
                         <div className="stable-badge">
                           <div className="badge-content stable-badge-content">
@@ -185,7 +185,7 @@ function Volts() {
               </div>
 
               <div className="col-sm-6 col-lg-4 column">
-                <div className="voltcard">
+                <div className="voltcard" id="volt3">
                   <div className="card-top">
                     <div className="top-letf">
                       <img
@@ -200,7 +200,7 @@ function Volts() {
                       />
                     </div>
                     <div className="top-right">
-                      <h2 className="card-title">CAKE-BNB</h2>
+                      <h2 className="card-title">CAKE-BNB3</h2>
                       <div className="badges">
                         <div className="core-badge">
                           <div className="badge-content core-badge-content">
@@ -262,7 +262,7 @@ function Volts() {
                 </div>
               </div>
               <div className="col-sm-6 col-lg-4 column">
-                <div className="voltcard">
+                <div className="voltcard" id="volt4">
                   <div className="card-top">
                     <div className="top-letf">
                       <img
@@ -277,7 +277,7 @@ function Volts() {
                       />
                     </div>
                     <div className="top-right">
-                      <h2 className="card-title">CAKE-BNB</h2>
+                      <h2 className="card-title">CAKE-BNB4</h2>
                       <div className="badges">
                         <div className="stable-badge">
                           <div className="badge-content stable-badge-content">
@@ -351,7 +351,7 @@ function Volts() {
               </div>
 
               <div className="col-sm-6 col-lg-4 column">
-                <div className="voltcard">
+                <div className="voltcard" id="volt5">
                   <div className="card-top">
                     <div className="top-letf">
                       <img
@@ -366,7 +366,7 @@ function Volts() {
                       />
                     </div>
                     <div className="top-right">
-                      <h2 className="card-title">CAKE-BNB</h2>
+                      <h2 className="card-title">CAKE-BNB5</h2>
                       <div className="badges">
                         <div className="core-badge">
                           <div className="badge-content core-badge-content">
@@ -428,7 +428,7 @@ function Volts() {
                 </div>
               </div>
               <div className="col-sm-6 col-lg-4 column">
-                <div className="voltcard">
+                <div className="voltcard" id="volt6">
                   <div className="card-top">
                     <div className="top-letf">
                       <img
@@ -443,7 +443,7 @@ function Volts() {
                       />
                     </div>
                     <div className="top-right">
-                      <h2 className="card-title">CAKE-BNB</h2>
+                      <h2 className="card-title">CAKE-BNB6</h2>
                       <div className="badges">
                         <div className="stable-badge">
                           <div className="badge-content stable-badge-content">

@@ -1,7 +1,10 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <div className="voults">
       <section className="main-page">
@@ -487,7 +490,7 @@ function Home() {
             </div>
             <div className="row second-row">
               <div className="col-sm-6 col-lg-4 column">
-                <div className="card">
+                <div className="card" onClick={() => navigate("/volts#volt1")}>
                   <div className="card-top">
                     {/* <div className="zigzag"></div> */}
                     <h5 className="top-head">Volt 1</h5>
@@ -528,7 +531,7 @@ function Home() {
                 </div>
               </div>
               <div className="col-sm-6 col-lg-4 column">
-                <div className="card">
+                <div className="card" onClick={() => navigate("/volts#volt2")}>
                   <div className="card-top">
                     <h5 className="top-head">Volt 2</h5>
                   </div>
@@ -568,7 +571,7 @@ function Home() {
                 </div>
               </div>
               <div className="col-sm-6 col-lg-4 column">
-                <div className="card">
+                <div className="card" onClick={() => navigate("/volts#volt3")}>
                   <div className="card-top">
                     <h5 className="top-head">Volt 3</h5>
                   </div>
@@ -608,7 +611,7 @@ function Home() {
                 </div>
               </div>
               <div className="col-sm-6 col-lg-4 column">
-                <div className="card">
+                <div className="card" onClick={() => navigate("/volts#volt4")}>
                   <div className="card-top">
                     <h5 className="top-head">Volt 4</h5>
                   </div>
@@ -648,7 +651,7 @@ function Home() {
                 </div>
               </div>
               <div className="col-sm-6 col-lg-4 column">
-                <div className="card">
+                <div className="card" onClick={() => navigate("/volts#volt5")}>
                   <div className="card-top">
                     <h5 className="top-head">Volt 5</h5>
                   </div>
@@ -689,7 +692,7 @@ function Home() {
                 </div>
               </div>
               <div className="col-sm-6 col-lg-4 column">
-                <div className="card">
+                <div className="card" onClick={() => navigate("/volts#volt6")}>
                   <div className="card-top">
                     <h5 className="top-head">Volt 6</h5>
                   </div>
