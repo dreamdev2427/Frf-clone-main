@@ -884,6 +884,15 @@ svg {
 
                     }
 
+                    .card-goto-explore-nochildren {
+                        margin-bottom: 30px;
+                        color: #1fc7e4;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        font-size: 16px;
+                        text-align: center;
+                    }
+
                     .card-goto-explore {
                         margin-bottom: 30px;
                         color: #1fc7e4;
@@ -896,6 +905,9 @@ svg {
                             display: flex;
                             justify-content: flex-start;
 
+                            img {
+                                fill:#12a7cb
+                            }
                         }
                         .linquidity {
                             justify-content: space-between;

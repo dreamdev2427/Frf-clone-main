@@ -87,7 +87,7 @@ function Volts() {
                     <button className="connect-btn">Connect Wallet</button>
                   </div>
                   <div className="card-bottom"></div>
-                  <div className="card-goto-explore">Details</div>
+                  <div className="card-goto-explore-nochildren">Details</div>
                 </div>
               </div>
               <div className="col-sm-6 col-lg-4 column">
@@ -160,9 +160,18 @@ function Volts() {
                       <div>Total Linquidify:</div>
                       <div>$282,660</div>
                     </div>
-                    <div>Get MONI-BNB</div>
-                    <div>View Contract</div>
-                    <div>See Pair Info</div>
+                    <div>
+                      Get MONI-BNB
+                      <img src="/images/toblockscan.svg" alt="toblockscan" />
+                    </div>
+                    <div>
+                      View Contract
+                      <img src="/images/toblockscan.svg" alt="toblockscan" />
+                    </div>
+                    <div>
+                      See Pair Info
+                      <img src="/images/toblockscan.svg" alt="toblockscan" />
+                    </div>
                   </div>
                 </div>
               </div>
