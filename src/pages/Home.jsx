@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { TimeWithFriktionAnimation } from "../components/LandingPageHero/TimeWithFriktionAnimation";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
@@ -42,12 +43,7 @@ function Home() {
                   }}
                   className="rotating_animations"
                 >
-                  <img src="/images/rotating_banner_01.svg" />
-                  <img src="/images/rotating_banner_02.svg" />
-                  <img src="/images/rotating_banner_03.svg" />
-                  <img src="/images/rotating_banner_04.svg" />
-                  <img src="/images/rotating_banner_05.svg" />
-                  <img src="/images/rotating_banner_06.svg" />
+                  <TimeWithFriktionAnimation />
                 </div>
               </div>
             </div>
