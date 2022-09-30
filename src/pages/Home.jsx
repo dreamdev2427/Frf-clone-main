@@ -1,7 +1,8 @@
+import { useNavigate } from "react-router-dom";
+import Reveal, { Zoom } from "react-awesome-reveal";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { TimeWithFriktionAnimation } from "../components/LandingPageHero/TimeWithFriktionAnimation";
-import { useNavigate } from "react-router-dom";
+import { fadeInUp } from "./utils";
 
 function Home() {
   const navigate = useNavigate();
@@ -15,35 +16,62 @@ function Home() {
           <div className="container">
             <div className="row">
               <div className="col-sm-6">
-                <div className="left-banner">
-                  <a
-                    href="https://docs.friktion.fi/protocol/security"
-                    target="blank"
-                    className="left-top"
-                  >
-                    <p>AUDITED BY</p>
-                    <img src="/images/banner-logo.png" alt="banner-logo" />
-                  </a>
-                  <h1>Smarter returns on your crypto</h1>
-                  <p>
-                    Diversify your portfolio with strategies powered by
-                    Friktion.
-                  </p>
-                  <a href="/" className="primarybtn">
-                    Get Started
-                  </a>
-                </div>
+                <Reveal
+                  keyframes={fadeInUp}
+                  className="header-logo onStep"
+                  delay={0}
+                  duration={800}
+                  triggerOnce
+                >
+                  <div className="left-banner">
+                    <a
+                      href="https://docs.friktion.fi/protocol/security"
+                      target="blank"
+                      className="left-top"
+                    >
+                      <p>AUDITED BY</p>
+                      <img src="/images/banner-logo.png" alt="banner-logo" />
+                    </a>
+                    <h1>Smarter returns on your crypto</h1>
+                    <p>
+                      Diversify your portfolio with strategies powered by
+                      Friktion.
+                    </p>
+                    <a href="/" className="primarybtn">
+                      Get Started
+                    </a>
+                  </div>
+                </Reveal>
               </div>
-              <div className="col-sm-6">
+              <div
+                className="col-sm-6"
+                style={{ display: "flex", justifyContent: "center" }}
+              >
                 <div
                   style={{
-                    width: "500px",
-                    height: "500px",
+                    width: "350px",
+                    height: "350px",
                     position: "relative",
                   }}
                   className="rotating_animations"
                 >
-                  <TimeWithFriktionAnimation />
+                  <Zoom
+                    className="logo-wrapper align-items-center"
+                    delay={600}
+                    duration={1000}
+                    triggerOnce
+                  >
+                    <div className="crypto-logo">
+                      <div id="ripple"></div>
+                      <div id="ripple2"></div>
+                      <div id="ripple3"></div>
+                      <img
+                        src="/images/favicon-white.png"
+                        className="crypto-logo-img rounded mx-auto d-block pulse2"
+                        alt="MAGIC"
+                      />
+                    </div>
+                  </Zoom>
                 </div>
               </div>
             </div>
@@ -771,6 +799,15 @@ function Home() {
       </div>
 
       <Footer />
+
+      <div className="bg-ripple-animation d-md-block">
+        <div className="left-bottom-ripples">
+          <div className="ripples"></div>
+        </div>
+        <div className="top-right-ripples">
+          <div className="ripples"></div>
+        </div>
+      </div>
     </div>
   );
 }

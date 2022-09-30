@@ -234,6 +234,165 @@ header{
 .main-page{
     backdrop-filter: blur(200px);
 }
+.logo-wrapper {
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: #FFF;
+    border-radius: 50%;
+    padding: 15px;
+
+    @media only screen and (max-width: 992px) {
+        width: 16rem;
+    }
+
+    @media only screen and (max-width: 576px) {
+        width: 12rem;
+    }
+
+    .crypto-logo {
+        z-index: 1;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, #FDC800, #FF4137);
+        border-radius: 50%;
+        box-shadow: -2px 3px 26px 0 #ff4137;
+
+        @media only screen and (max-width: 992px) {
+            width: 14rem;
+            height: 14rem;
+        }
+
+        @media only screen and (max-width: 576px) {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        #ripple,
+        #ripple2,
+        #ripple3 {
+            border-radius: 9999px;
+            border: 1px solid rgba(255, 255, 255, .4);
+            box-shadow: 0 0 20px rgb(255 255 255 / 40%);
+            position: absolute;
+            bottom: 50%;
+            margin-bottom: -326px;
+            right: 50%;
+            margin-right: -326px;
+            animation: shrink 5s linear infinite;
+            z-index: 0;
+            background: rgba(255, 255, 255, .4);
+        }
+
+        #ripple {
+            animation-delay: 1s;
+        }
+
+        #ripple2 {
+            animation-delay: 1.5s;
+        }
+
+        #ripple3 {
+            animation-delay: 2s;
+        }
+
+        .crypto-logo-img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 40%;
+            animation: pulse2 5s linear infinite
+        }
+    }
+}
+
+.bg-ripple-animation {
+    overflow: hidden;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.bg-ripple-animation,
+.intro-video-bg-ripples,
+.left-bottom-ripples {
+    position: absolute;
+    left: 0;
+}
+
+.left-bottom-ripples {
+    margin-bottom: -80vh;
+    margin-left: -80vh;
+    width: 160vh;
+    height: 160vh;
+    bottom: 0;
+
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.top-right-ripples {
+    margin-top: -80vh;
+    margin-right: -80vh;
+    width: 160vh;
+    height: 160vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.ripples {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+    &::before {
+        width: 100%;
+        height: 100%;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: radial-gradient(ellipse at center, rgba(182, 225, 235, 0) 0, rgba(182, 225, 235, .05) 40%, rgba(182, 225, 235, .4) 100%);
+        border: 0.5px solid #fff;
+        border-radius: 50%;
+        opacity: 0;
+        transform: scale(1);
+        animation-name: k1;
+        animation-duration: 6s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    &::after {
+        width: 100%;
+        height: 100%;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: radial-gradient(ellipse at center, rgba(182, 225, 235, 0) 0, rgba(182, 225, 235, .05) 40%, rgba(182, 225, 235, .4) 100%);
+        border: 0.5px solid #fff;
+        border-radius: 50%;
+        opacity: 0;
+        animation-name: k1;
+        animation-duration: 6s;
+        animation-delay: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
 
 .banner{
     .container{
