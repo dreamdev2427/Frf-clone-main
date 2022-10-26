@@ -8,6 +8,7 @@ function Home() {
   const navigate = useNavigate();
 
   return (
+    <>
     <div className="voults">
       <section className="main-page">
         <Header />
@@ -514,7 +515,7 @@ function Home() {
             </div>
             <div className="row second-row">
               <div className="col-sm-6 col-lg-4 column">
-                <div className="card" onClick={() => navigate("/volts#volt1")}>
+                <div className="card" onClick={() => {alert("/volts#volt1"); navigate("/volts#volt1")}}>
                   <div className="card-top">
                     {/* <div className="zigzag"></div> */}
                     <h5 className="top-head">Volt 1</h5>
@@ -800,15 +801,17 @@ function Home() {
 
       <Footer />
 
-      <div className="bg-ripple-animation d-md-block">
-        <div className="left-bottom-ripples">
-          <div className="ripples"></div>
-        </div>
-        <div className="top-right-ripples">
-          <div className="ripples"></div>
-        </div>
-      </div>
     </div>
+    
+    <div className="bg-ripple-animation d-md-block">
+    <div className="left-bottom-ripples">
+      <div className="ripples"></div>
+    </div>
+    <div className="top-right-ripples">
+      <div className="ripples"></div>
+    </div>
+  </div>
+  </>
   );
 }
 

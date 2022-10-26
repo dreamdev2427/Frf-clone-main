@@ -222,17 +222,17 @@ header{
     left: 0px;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -2;
     .main{
         width: 100%;
         height: 100%;
-        border-radius: 50%;
-        background: linear-gradient(90.31deg, rgba(54, 121, 247, 0.2) -2.65%, rgba(219, 115, 222, 0.2) 98.9%)
+        background:rgba(54, 121, 247, 0.2) ;// linear-gradient(90.31deg, rgba(54, 121, 247, 0.2) -2.65%, rgba(219, 115, 222, 0.2) 98.9%)
     }
 }
 
 .main-page{
-    backdrop-filter: blur(200px);
+    background: transparent;
+    z-index: 2;
 }
 .logo-wrapper {
     overflow: hidden;
@@ -312,7 +312,7 @@ header{
 
 .bg-ripple-animation {
     overflow: hidden;
-    z-index: 1;
+    z-index: -1;
     top: 0;
     right: 0;
     bottom: 0;
@@ -363,7 +363,7 @@ header{
         position: absolute;
         top: 0;
         left: 0;
-        background: radial-gradient(ellipse at center, rgba(182, 225, 235, 0) 0, rgba(182, 225, 235, .05) 40%, rgba(182, 225, 235, .4) 100%);
+        background: radial-gradient(ellipse at center, rgba(89, 23, 122, 0) 0, rgba(120, 48, 131, .05) 40%, rgba(214, 168, 235, .4) 100%);
         border: 0.5px solid #fff;
         border-radius: 50%;
         opacity: 0;
@@ -382,7 +382,7 @@ header{
         position: absolute;
         top: 0;
         left: 0;
-        background: radial-gradient(ellipse at center, rgba(182, 225, 235, 0) 0, rgba(182, 225, 235, .05) 40%, rgba(182, 225, 235, .4) 100%);
+        background: radial-gradient(ellipse at center, rgba(89, 23, 122, 0) 0, rgba(120, 48, 131, .05) 40%, rgba(214, 168, 235, .4) 100%);
         border: 0.5px solid #fff;
         border-radius: 50%;
         opacity: 0;
